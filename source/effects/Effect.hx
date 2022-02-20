@@ -12,7 +12,7 @@ class Effect {
         return effects;
     }
 
-    public function getVerb():String {
+    public function getVerb() {
         return "affected";
     }
 
@@ -80,7 +80,6 @@ class Effect {
         var i = 0;
         if (activeEffects.length == 0) {
             Sys.println("you have no effects on you right now.");
-            return false;
         }
         for (effect in activeEffects) {
             if (i == 0) {
@@ -97,6 +96,5 @@ class Effect {
             i++;
         }
         Sys.println("you currently have these effects: " + readableList);
-        return true;
     }
 }
